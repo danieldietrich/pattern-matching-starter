@@ -16,7 +16,7 @@ import starter.model.Person;
 import java.time.LocalDate;
 
 @Patterns
-public class Starter {
+class Starter {
 
     @Unapply
     static Tuple2<String, Address> Person(Person person) {

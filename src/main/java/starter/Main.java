@@ -25,7 +25,7 @@ public class Main {
         // -- the good old way
 
         String result1 = "not found";
-        if (person != null && "Carl".equals(person.getName())) {
+        if ("Carl".equals(person.getName())) {
             Address address = person.getAddress();
             if (address != null) {
                 String street = address.getStreet();
