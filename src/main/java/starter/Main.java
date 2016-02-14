@@ -20,12 +20,13 @@ public class Main {
 
         // Example 1
 
+        // could be also null
         Person person = new Person("Carl", new Address("Milkyway", 42));
 
         // -- the good old way
 
         String result1 = "not found";
-        if ("Carl".equals(person.getName())) {
+        if (person != null && "Carl".equals(person.getName())) {
             Address address = person.getAddress();
             if (address != null) {
                 String street = address.getStreet();
